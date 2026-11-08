@@ -10,6 +10,6 @@ export class CategoriesService {
   private readonly httpclient = inject(HttpClient);
 
   getAllCategories(): Observable<any> {
-    return this.httpclient.get(environment.baseUrl + `api/v1/categories`);
+    return this.httpclient.get(environment.baseUrl + `/api/v1/categories`);
   }
 }

@@ -20,7 +20,7 @@ export class Login {
 
   loginForm: FormGroup = this.fb.group({
     email: ['', [Validators.required, Validators.email]],
-    pasword: [
+    password: [
       '',
       [
         Validators.required,

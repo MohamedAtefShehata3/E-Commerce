@@ -1,4 +1,4 @@
-interface Cart {
+export interface CartData {
   _id: string;
   cartOwner: string;
   products: Product2[];
@@ -8,14 +8,14 @@ interface Cart {
   totalCartPrice: number;
 }
 
-interface Product2 {
+export interface Product2 {
   _id: string;
   count: number;
   product: Product;
   price: number;
 }
 
-interface Product {
+export interface Product {
   subcategory: Subcategory[];
   _id: string;
   title: string;
@@ -28,14 +28,14 @@ interface Product {
   id: string;
 }
 
-interface Category {
+export interface Category {
   _id: string;
   name: string;
   slug: string;
   image: string;
 }
 
-interface Subcategory {
+export interface Subcategory {
   _id: string;
   name: string;
   slug: string;
